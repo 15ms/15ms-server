@@ -1,0 +1,15 @@
+tmp
+npm-debug.log
+coverage
+lcov.info
+docs
+test
+
+.nyc_output
+.eslintignore
+.eslintrc.json
+.gitignore
+.travis.yml
+
+README.md
+ROADMAP.md
