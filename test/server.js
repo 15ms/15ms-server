@@ -5,7 +5,7 @@ module.exports = new Server({
   secure: {
     secret: '9oW23r'
   },
-  plugins: [
-    { routeName: 'test', moduleSrc: path.join(__dirname, './plugin-test.js') }
+  applications: [
+    { route: 'test', entry: path.join(__dirname, './app-test.js') }
   ]
 });

@@ -10,7 +10,7 @@ A secure extensible single-owner API server.
 GET for guest access.
 POST for owner access.
 
-todo - write more design
+The owner access should be validated and identified.
 
 ## Usage
 
@@ -25,8 +25,8 @@ const server = new Server({
   secure: {
     secret: 'your-secret'
   },
-  plugins: [
-    { routeName: 'your-plugin-name', moduleSrc: 'path-of-module' }
+  applications: [
+    { route: 'your-application-name', entry: 'entry-path-of-module' }
   ]
 });
 
@@ -34,8 +34,8 @@ server.listen(8080);
 ```
 
 ```sh
-curl http://localhost:8080/your-plugin-name/your-api-path
-curl -X POST http://localhost:8080/your-plugin-name/your-api-path?hash=...
+curl http://localhost:8080/your-application-name/your-api-path
+curl -X POST http://localhost:8080/your-application-name/your-api-path?hash=...
 
 # also you can use @15ms/client to send request
 ```

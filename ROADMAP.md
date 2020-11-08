@@ -5,4 +5,7 @@
 4. basic test (ok)
 
 ## Milestone 1
-TODO
+1. rename plugin to application (ok)
+2. server context injecting
+3. application hot reload
+4. application inner model

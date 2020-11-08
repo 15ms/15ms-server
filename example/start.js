@@ -5,8 +5,8 @@ const server = new Server({
   secure: {
     secret: 'aXbC0T'
   },
-  plugins: [
-    { routeName: 'play', moduleSrc: path.join(__dirname, 'plugin-play.js') }
+  applications: [
+    { route: 'play', entry: path.join(__dirname, 'app-play.js') }
   ]
 });
 
